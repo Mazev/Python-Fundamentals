@@ -14,4 +14,4 @@ while len(permutation) > 0:
     if index >= len(permutation):
         index = 0
 
-print(new_list)
+print(str(new_list).replace(' ', '').replace('\'', ''))
