@@ -13,7 +13,8 @@ while not command == 'No Money':
         if len(gifts) < int(words[2]):
             break
         if int(words[2]) <= len(gifts):
-            gifts[int(words[2])] = words[1]
+            gifts.insert(int(words[2]), words[1])
+            gifts.pop(int(words[2+1]))
     elif words[0] == 'JustInCase':
         gifts.pop(-1)
         gifts.append(words[1])
