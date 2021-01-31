@@ -6,13 +6,7 @@ for i in range(1, max(max_num) // 10 + 1):
     result = [max_num[j] for j in range(len(max_num)) if max_num[j] in range(i * 10 - 10 + 1, i * 10 + 1)]
     print(f"Group of {i * 10}'s: {result}")
 
-n = input().split(", ")
-nums = list(map(int, n))
 
-for i in range(1, max(nums) // 10 + 1):
-    result = [nums[j] for j in range(len(nums)) if nums[j] in range(i * 10 - 10 + 1, i * 10 + 1)]
-    print(f"Group of {i * 10}'s: {result}")
-#
 #
 
 # list_of_numbers = input().split(', ')
